@@ -54,7 +54,7 @@ Apache Maven 3.3.9
 
 ##### Библиотеки:
 
-## AdapterFirstProject:otus/AdapterFirstProject/1.0
+#### AdapterFirstProject:otus/AdapterFirstProject/1.0
 
 log4j:https://mvnrepository.com/artifact/log4j/log4j/1.2.17
 
