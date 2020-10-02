@@ -1,3 +1,4 @@
+import static org.apache.commons.io.FileUtils.contentEqualsIgnoreEOL;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,9 +17,10 @@ public class AdapterSecondProjectTest {
                 new File(TARGET_TEST_RESOURCES_PATH + "expectedGeneratedMatrices.txt"),
                 new File(targetOutputFilePath)
         );
-        Assert.assertTrue(contentEquals(
+        Assert.assertTrue(contentEqualsIgnoreEOL(
                 new File(targetOutputFilePath),
-                new File(TARGET_TEST_RESOURCES_PATH + "expectedAdapterResult.txt")
+                new File(TARGET_TEST_RESOURCES_PATH + "expectedAdapterResult.txt"),
+                "UTF-8"
         ));
     }
 }
